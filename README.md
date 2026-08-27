@@ -1,6 +1,6 @@
 # Executive E-Commerce & Supply Chain Analytics Engine
 
-> **Executive Impact Summary:** Analyzed **$36.78M in total revenue** across **20.65K customers**. Uncovered a critical operational breakdown where 95.27% of First Class orders were delivered late **, exposing **$20.13M in revenue to late delivery risk** and driving a **4.30% order cancellation rate**.
+> **Executive Impact Summary:Processed 180K+ transaction rows across 65K+ unique orders and 20.65K customers, analyzing $36.78M in total revenue.  Uncovered a critical operational breakdown where 95.27% of First Class orders were delivered late **, exposing **$20.13M in revenue to late delivery risk** and driving a **4.30% order cancellation rate**.
 
 ---
 
