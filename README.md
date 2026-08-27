@@ -1,8 +1,19 @@
 # Executive E-Commerce & Supply Chain Analytics Engine
 
-> **Executive Impact Summary:** Analyzed **$36.78M in gross revenue** across **20.65K customers**. Uncovered a critical operational breakdown where express shipping tiers fail promised delivery dates up to **95.27% of the time**, exposing **$20.13M in revenue to late delivery risk** and driving a **4.30% order cancellation rate**.
+> **Executive Impact Summary:** Analyzed **$36.78M in total revenue** across **20.65K customers**. Uncovered a critical operational breakdown where 95.27% of First Class orders were delivered late **, exposing **$20.13M in revenue to late delivery risk** and driving a **4.30% order cancellation rate**.
 
 ---
+
+## ETL & Analytics Pipeline
+
+**Python → MySQL → Power BI**
+
+* **Python** — Data cleaning, transformation, feature engineering, and relational table creation
+* **MySQL** — Relational data storage, data modeling, and SQL-based business analysis
+* **Power BI** — Interactive dashboards, KPI visualization, and executive insights
+
+---
+
 
 ## Key Business Metrics
 
@@ -24,8 +35,8 @@
 
 * **Systemic Failure in Premium Express Tiers:** **First Class** shipping fails SLA commitments **95.27% of the time** (averaging 2.00 days vs. 1 promised). **Second Class** fails **76.72% of the time** (averaging 3.99 days vs. 2 promised). Customers paying extra for expedited delivery are experiencing double the promised fulfillment time.
 * **Standard Class Deliveries Hold Schedule:** **Standard Class** performs reliably on target, averaging **4.00 actual shipping days vs. 4.00 promised days** with a significantly lower delay rate (38.13%).
-* **Uniform Bottlenecks Across Global Markets:** Late delivery rates are uniformly flat across all geographic regions (**Pacific Asia: 55.30%**, **Europe: 54.95%**, **USCA: 54.83%**, **LATAM: 54.36%**, **Africa: 54.13%**). This proves the delay issue is a carrier/fulfillment contract failure rather than a regional warehousing problem.
-* **Direct Revenue & Cancellation Exposure:** Delays jeopardize **$20.13M in sales volume** and directly contribute to a **4.30% total order cancellation rate** ($1.5M+ in lost sales).
+* **Uniform Bottlenecks Across Global Markets:** Late delivery rates are uniformly flat across all geographic regions (**Pacific Asia: 55.30%**, **Europe: 54.95%**, **USCA: 54.83%**, **LATAM: 54.36%**, **Africa: 54.13%**). This suggests the issue is systemic rather than concentrated in a specific geographic market.
+* **Direct Revenue & Cancellation Exposure:** $20.13M in sales are associated with late deliveries, and are at risk, while the overall order cancellation rate stands at 4.30%.
 
 ---
 
@@ -37,7 +48,7 @@
 
 * **Segment Revenue Dominance:** The **Consumer segment** generates **51.91% ($19.10M)** of total company sales, followed by **Corporate at 30.36% ($11.17M)** and **Home Office at 17.73% ($6.52M)**.
 * **The Repeat Purchase Growth Engine:** Customers falling into the **2–5 Orders (Regular)** bucket account for **~46.8% of total segment sales** ($8.93M in Consumer alone). 
-* **One-Time Buyer Conversion Opportunity:** Over **4,576 Consumer customers (42.7%)** make only 1 purchase before churning. Converting just 10% of these one-time buyers into the 2–5 order bucket represents an immediate **$890K+ net revenue gain**.
+* **One-Time Buyer Conversion Opportunity:** Over **4,576 Consumer customers (42.7%)** make only 1 purchase before churning. If 10% of one-time Consumer buyers reached the 2–5 order segment, the estimated incremental revenue opportunity would exceed $890K, based on the segment's observed purchasing behavior.
 * **Solid Customer Unit Economics:** Average revenue per customer stands at **$1.78K** with an average order frequency of **3.18 orders/customer**.
 
 ---
@@ -65,6 +76,29 @@
 * **Inventory Allocation Alignment:** Correlates category order frequency with geographic demand patterns to prevent overstocking low-velocity products in slower regional hubs.
 
 ---
+
+## 5. Technical Implementation
+
+### Data Model
+
+The original dataset was transformed into a relational structure to separate
+customers, orders, order-level processing, products, and order items.
+
+```text
+                    ┌──────────────┐
+                    │  Customers   │
+                    └──────┬───────┘
+                           │
+                           ▼
+┌────────────┐      ┌──────────────┐      ┌─────────────────┐
+│  Products  │─────▶│ Order Items  │◀─────│     Orders      │
+└────────────┘      └──────────────┘      └────────┬────────┘
+                                                    │
+                                                    ▼
+                                           ┌─────────────────┐
+                                           │ Order Processing │
+                                           └─────────────────┘
+
 
 ## Strategic Executive Recommendations
 
