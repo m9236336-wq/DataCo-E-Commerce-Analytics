@@ -51,6 +51,7 @@
 * **Macro Profitability Baseline:** Overall business maintains a net profit margin of **10.78% ($3.96M total profit)** on **$36.78M gross revenue**.
 * **Cross-Segment Profit Consistency:** Profit margins remain narrow and consistent across all buyer tiers (**Consumer: 10.86%**, **Corporate: 10.77%**, **Home Office: 10.59%**), indicating uniform pricing power but lack of volume-discount penalties.
 * **Revenue Stability Over Time:** Monthly sales performance demonstrates predictable demand cycles across 2015–2017, confirming that revenue fluctuations are tied to operational fulfillment capacity rather than demand drops.
+* **Discount vs. Profit Erosion:** High discount rates show a strong negative correlation with net profit; while discounting inflates top-line order volume, steep discounts (>15%) directly cause margin contraction and negative-profit orders without accelerating repeat customer conversion.
 
 ---
 
