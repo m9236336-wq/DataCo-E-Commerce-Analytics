@@ -81,8 +81,7 @@
 
 ### Data Model
 
-The original dataset was transformed into a relational structure to separate
-customers, orders, order-level processing, products, and order items.
+The original dataset was transformed into a relational structure to separate customers, orders, order-level processing, products, and order items.
 
 ```text
                     ┌──────────────┐
@@ -98,14 +97,18 @@ customers, orders, order-level processing, products, and order items.
                                            ┌─────────────────┐
                                            │ Order Processing │
                                            └─────────────────┘
-
+```
 
 ---
 
 ## Strategic Executive Recommendations
 
 1. **Renegotiate Express Carrier Contracts:** Audit logistics partners handling First and Second Class shipping. Update checkout delivery estimates from 1–2 days to 3–4 days immediately to manage customer expectations and prevent order cancellations.
+
 2. **Targeted Repeat Retention Campaigns:** Direct lifecycle marketing automation toward converting "1 Order (One-Time)" buyers into the "2–5 Orders (Regular)" bucket, where customer lifetime value scales exponentially.
+
+---
+
 
 ---
 
