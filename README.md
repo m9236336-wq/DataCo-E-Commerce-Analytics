@@ -100,6 +100,8 @@ customers, orders, order-level processing, products, and order items.
                                            └─────────────────┘
 
 
+---
+
 ## Strategic Executive Recommendations
 
 1. **Renegotiate Express Carrier Contracts:** Audit logistics partners handling First and Second Class shipping. Update checkout delivery estimates from 1–2 days to 3–4 days immediately to manage customer expectations and prevent order cancellations.
